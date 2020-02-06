@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 //apply plugin: 'com.github.dcendents.android-maven'
 android {
     compileSdkVersion 29
@@ -26,9 +28,9 @@ android {
 
     publish {
         userOrg = 'marvxstudio'         // bintray.com 用户名
-        groupId = 'com.ms'  // jcenter上的路径
-        artifactId = 'jcenter'          // 项目名称
-        publishVersion = '1.0.0'  // 版本号
+        groupId = 'com.kt'  // jcenter上的路径
+        artifactId = 'Jcen2'          // 项目名称
+        publishVersion = '0.0.1'  // 版本号
         desc = 'cc'   // 项目 描述(不重要)。"不重要"的意思是你可以乱填,但是不能删除 desc 哦。
         website = 'https://github.com/marvxstudio/Jcen' //网站。 就填入Github 项目地址就可以了。也不能删除 website 哦。
     }
